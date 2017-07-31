@@ -12,15 +12,23 @@ Usage:
 	A valid propositional KB can be used as an English KB. 
 Terms:
 	Symbol: Propositional symbols, stores whether it is inferred, what it infers and what infers it.
+	
 	Symbols: A list of symbols.
+	
 	Character: Plaintext representation of a symbol, "P2" for example.
+	
 	Operator: Either & or =>, essentially anything that isn't a symbol or whitespace.
+	
 	Statement: A collection of symbols separated by operators, which has a left and a right side.
+	
 	KB: A list of statements.
 
 	Inferrer: A symbol that leads up to another symbol, in a tree structure it would be a child.
+	
 	Inferrers: All symbols that lead up to another symbol.
+	
 	Inferred: Whether a symbol is logically inferred, so if all of its inferrers are True.
+	
 	Infers: Logically concludes. I.e. All inferrers are True, so the inferred symbol is True.
 
 Algorithms:
@@ -94,20 +102,3 @@ Algorithms:
 			- It will fail if you try to infer a symbol that infers itself, or that is not inferred at all.
 			- It won't work with most English statements for some bizarre reason.
 			Essentially it only works well for chains that consist of a single symbol inferring another, like d.
-Extra:
-	I created the KB in a way that allows for easy conversion between different formats. For example it can translate an English KB into a propositional KB incredibly easily.
-	It is flexible enough that you can have incredibly large symbols, and as many of them as you'd like. 
-
-	It cannot deal with negation or several righthand symbols however, which did not appear to be a required feature.
-Test cases:
-	English:
-	TELL
-	if raining and outdoors then wet; if wet and outdoors then cold; if cold and tired then sick; outdoors; raining; tired;
-	ASK
-	sick
-
-	Propositional:
-	TELL
-	p2=>p3; p3 => p1; c => e; b&e => f; g&f => h; p1=>d; p1&p3 => c; a; b; p2;
-	ASK
-	d
