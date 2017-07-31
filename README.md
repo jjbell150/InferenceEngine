@@ -11,6 +11,7 @@ Usage:
 	
 	A valid propositional KB can be used as an English KB. 
 Terms:
+
 	Symbol: Propositional symbols, stores whether it is inferred, what it infers and what infers it.
 	
 	Symbols: A list of symbols.
