@@ -1,0 +1,4 @@
+TELL
+if raining and outdoors then wet; if wet then cold; if cold and tired then sick; outdoors; raining; tired;
+ASK
+sick
