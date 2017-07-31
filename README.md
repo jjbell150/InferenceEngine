@@ -1,6 +1,5 @@
 Usage:
-	InferenceEngine.exe [filename] [method] (language)
-	
+	InferenceEngine.exe [filename] [method] (language)	
 	InferenceEngine.exe testENG.txt fc English
 	
 	Method is type of inference; so fc (Forwards chaining), bc (Backwards chaining) or tt (Truth Table). 
@@ -33,6 +32,7 @@ Terms:
 	Infers: Logically concludes. I.e. All inferrers are True, so the inferred symbol is True.
 
 Algorithms:
+
 	Backwards_Chaining:
 		Time taken: 8 hours
 
