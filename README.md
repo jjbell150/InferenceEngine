@@ -1,4 +1,6 @@
 Usage:
+	
+	
 	InferenceEngine.exe [filename] [method] (language)
 	
 	InferenceEngine.exe testENG.txt fc English
