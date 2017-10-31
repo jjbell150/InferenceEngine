@@ -1,6 +1,7 @@
 Usage:
-	InferenceEngine.exe [filename] [method] (language)	
-	(InferenceEngine.exe testENG.txt fc English)
+	InferenceEngine.exe [filename] [method] (language)
+	
+	InferenceEngine.exe testENG.txt fc English
 	
 	Method is type of inference; so fc (Forwards chaining), bc (Backwards chaining) or tt (Truth Table). 
 	Language is optional, it will default to propositional.
